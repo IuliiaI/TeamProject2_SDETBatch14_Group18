@@ -1,15 +1,17 @@
+package Tasks;
+
 public class Task2 {
-    /*    We have to calculate the average of marks obtained in three subjects by student A and by
-     student B. Create class 'Marks' with an abstract method 'getPercentage' that will be returning
+    /*    We have to calculate the average of marks obtained in three subjects by student Tasks.A and by
+     student Tasks.B. Create class 'Tasks.Marks' with an abstract method 'getPercentage' that will be returning
      the average percentage of marks. Provide implementation of abstract method in classes
-     'A' and 'B'. The constructor of student A takes the marks in three subjects as its parameters and
-     the marks in four subjects as its parameters for student B. Test your code    */
+     'Tasks.A' and 'Tasks.B'. The constructor of student Tasks.A takes the marks in three subjects as its parameters and
+     the marks in four subjects as its parameters for student Tasks.B. Test your code    */
     public static void main(String[] args) {
         Marks[] marks={new A(75,70,80),new B(90,65,90,80)};
         for(Marks m:marks){
            System.out.println(m.getPercentage());
         }
-        /*A studentA = new A(75, 70, 80);
+        /*Tasks.A studentA = new Tasks.A(75, 70, 80);
         /double average1 = studentA.getPercentage();
         System.out.println(average1);*/
     }
